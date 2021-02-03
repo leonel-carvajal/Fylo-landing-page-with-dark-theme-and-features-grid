@@ -1,0 +1,29 @@
+:root{
+  //Primary colors
+--Dark-BlueOne: rgb(28, 36, 49);;
+--Dark-BlueTwo: hsl(218, 28%, 13%);
+--Dark-BlueThree: hsl(216, 53%, 9%);
+--Dark-BlueFour: hsl(219, 30%, 18%);
+//Acents
+--Cyan: hsl(176, 68%, 64%);
+--Blue: hsl(198, 60%, 50%);
+--Light-Red: hsl(0, 100%, 63%);
+--White: hsl(0, 0%, 100%);
+}
+
+$darkblueOne:var(--Dark-BlueOne);
+$darkblueTwo:var(--Dark-BlueTwo);
+$darkblueThree:var(--Dark-BlueThree);
+$darkblueFour:var(--Dark-BlueFour);
+$white:var(--White);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+$fontHeaders: 'Raleway';
+$fontBody:'Open Sans';
+
+body{
+  font-size: 14px;
+  font-family: $fontBody, sans-serif;
+  background-color:$darkblueTwo;
+  color: $white;
+}
