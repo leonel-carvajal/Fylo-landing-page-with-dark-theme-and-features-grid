@@ -1,0 +1,22 @@
+.header{
+  font-family: $fontHeaders,sans-serif;
+  height: 100px;
+}
+.menu{
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  &--img{
+    margin-top: 20px;
+    display: block;
+    width: 60%;
+  }
+  &--link{
+    text-decoration: none;
+    color: $white;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #ccc;
+  }
+}
