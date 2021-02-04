@@ -1,0 +1,70 @@
+.footer{
+  padding-top: 6em;
+  background-color: $darkblueThree;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  &--img, &--info{
+    margin-left: 25px;
+  }
+  &--imgTwo{
+    transform: translateY(-250%) translateX(200%);
+  }
+  &--info{
+    width: 80%;
+    margin-left: 55px;
+    margin-bottom: 0;
+  }
+  &--section{
+    &:nth-child(2){
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+    &--infoOne,&--infoTwo{
+      margin-left: 25px;
+      margin-bottom: 10px;
+      & img{
+        margin-right: 10px;
+      }
+    }
+    &:nth-child(3){
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &:last-child{
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+  }
+  &--menuOne{
+    margin-bottom: 10px;
+  }
+  &--menuOne, &--menuTwo{
+    margin-left: 25px;
+  }
+  &--item{
+    line-height: 2em;
+  }
+  &--link{
+    color: $white;
+    text-decoration: none;
+  }
+  &--social{
+    display: flex;
+    justify-content: space-evenly;
+    & img{
+      display: block;
+      width: 25px;
+      height: 25px;
+      margin-bottom: 15px;
+    }
+  }
+  &--page, &--author{
+    color: $lightred;
+  }
+  &--attribution{
+    margin: 0;
+  }
+}

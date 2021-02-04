@@ -1,0 +1,88 @@
+.testimonials{
+  position: relative;
+  &--quotes{
+    position: absolute;
+    top:-40px;
+    left: 40px;
+  }
+}
+.card{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $darkblueFour;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  height: 200px;
+  &--header{
+    padding: 0.4em;
+  }
+  &--testimonials{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+  }
+  &--main{
+    padding: 0.5em;
+  }
+  &--img{
+    max-width:15%;
+    border-radius: 50%;
+  }
+  &--name{
+    font-weight: 700;
+    transform: translateX(20%) translateY(-350%);
+  }
+  &--info{
+    color: #ccc;
+    transform: translateX(20%) translateY(-400%);
+  }
+}
+.access{
+  background-color: $darkblueOne;
+  height: 300px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(15%);
+  border-radius: 10px;
+  text-align: center;
+  &--top{
+    height: 50%;
+  }
+  &--down{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  &--title{
+    padding: 0.5em;
+    font-size: 1.5em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &--info{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  &--email, &--button{
+    width: 90%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+  }
+  &--button{
+    background-color: $blue;
+    color: $white;
+    font-weight: 700;
+  }
+}
