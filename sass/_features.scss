@@ -1,4 +1,12 @@
 .features{
+  @include laptop{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   &--content{
     text-align: center;
     margin-bottom: 75px;
@@ -14,6 +22,11 @@
   }
 }
 .secondary{
+  @include laptop{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+  }
   margin-bottom: 50px;
   &--img{
     display: block;
@@ -32,6 +45,12 @@
     text-align: justify;
   }
   &--link{
+    @include laptop{
+      margin-left: 30px;
+      &:hover{
+        color: $white;
+      }
+    }
     display: inline-block;
     text-decoration: none;
     color: $cyan;

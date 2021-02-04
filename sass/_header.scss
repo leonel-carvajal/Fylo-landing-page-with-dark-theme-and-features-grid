@@ -7,12 +7,24 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  @include laptop{
+    &--item:first-child{
+      margin-right: 50%;
+      margin-left: 20px;
+    }
+  }
   &--img{
     margin-top: 20px;
     display: block;
     width: 60%;
   }
   &--link{
+    @include laptop{
+      cursor: pointer;
+      &:hover{
+        color: $white;
+      }
+    }
     text-decoration: none;
     color: $white;
     font-size: 1.1em;

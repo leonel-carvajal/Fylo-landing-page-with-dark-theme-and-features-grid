@@ -29,4 +29,13 @@ body{
   font-family: $fontBody, sans-serif;
   background-color:$darkblueTwo;
   color: $white;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+  background-color: $darkblueOne;
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: $lightred;
+  border-radius: 10px;
 }

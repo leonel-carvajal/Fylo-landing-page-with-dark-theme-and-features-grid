@@ -1,4 +1,9 @@
 .testimonials{
+  @include laptop{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+  }
   position: relative;
   &--quotes{
     position: absolute;
@@ -7,6 +12,9 @@
   }
 }
 .card{
+  @include laptop{
+    width: 90%;
+  }
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -40,6 +48,9 @@
   }
 }
 .access{
+  @include laptop{
+    width: 50%;
+  }
   background-color: $darkblueOne;
   height: 300px;
   width: 90%;
